@@ -5,8 +5,12 @@ import cors from "cors";
 const app = express ();
 
 app.use(cors({
-   origin: "https://form-registration-login-123.netlify.app"
+  origin: [
+    "https://form-registration-login-123.netlify.app",
+    "http://localhost:3000"
+  ]
 }));
+
 
 app.use(express.json());
 app.use("/api/user",router);
