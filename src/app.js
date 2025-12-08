@@ -6,7 +6,8 @@ const app = express ();
 
 app.use(cors({
    origin: "https://form-registration-login-123.netlify.app"
-}))
+}));
+
 app.use(express.json());
 app.use("/api/user",router);
 
