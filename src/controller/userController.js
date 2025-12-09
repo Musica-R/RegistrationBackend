@@ -6,7 +6,7 @@ import dotenv from "dotenv";
 import twilio from "twilio";
 
 
-dotenv.config({ path: './.env' });
+dotenv.config();
 
 const userRegistration = async (req, res) => {
 
