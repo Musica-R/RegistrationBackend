@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 import database_connection from "./config/database.js";
 import app from "./app.js";
 
-dotenv.config({path:'./.env'});
+dotenv.config();
 // console.log("EMAIL_USER =", process.env.EMAIL_USER);
 // console.log("EMAIL_PASS =", process.env.EMAIL_PASS);
 
