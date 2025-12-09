@@ -161,14 +161,14 @@ export const DashboardPage = async (req, res) => {
 
 
 const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
+  host: "smtp-relay.sendinblue.com",
+  port: 587,
   auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS // your APP PASSWORD
+    user: process.env.BREVO_USER,
+    pass: process.env.BREVO_PASS
   }
 });
+
 
 // // Optional: verify transporter
 // transporter.verify((err, success) => {
