@@ -176,6 +176,9 @@ const transporter = nodemailer.createTransport({
 //   else console.log("Email transporter ready!");
 // });
 
+transporter.verify((err, success) => {
+  console.log("VERIFY ERROR:", err);
+});
 
 export const ForgotPassword = async (req, res) => {
   const { email } = req.body;
