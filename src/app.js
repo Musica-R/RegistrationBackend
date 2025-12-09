@@ -10,7 +10,9 @@ app.use(cors({
     "http://localhost:3000"
   ]
 }));
-
+app.get("/", (req, res) => {
+  res.send("Backend server is running");
+});
 
 app.use(express.json());
 app.use("/api/user",router);
